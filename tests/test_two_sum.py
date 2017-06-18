@@ -22,6 +22,10 @@ class TwoNumTests(unittest.TestCase):
         target = 6
         assert_equal(self.solution.two_sum(nums, target), [0, 2])
 
+    def test_two_sum_with_no_matched_items(self):
+        nums = [1, 2, 3, 4]
+        target = 8
+        assert_equal(self.solution.two_sum(nums, target), None)
 
 if __name__ == "__main__":
     unittest.main()
