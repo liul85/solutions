@@ -13,3 +13,11 @@ class Solution(object):
                 int_sum -= mapping[r]
             last_sym = r
         return int_sum
+
+    def integer_to_roman(self, number):
+        I = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
+        X = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
+        C = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
+        M = ["", "M", "MM", "MMM"]
+        return M[(number%10000)/1000] + C[(number%1000)/100] + X[(number%100)/10] + I[number % 10]
+        
