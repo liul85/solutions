@@ -1,0 +1,1 @@
+from longest_com_prefix import Solution
