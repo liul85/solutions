@@ -12,3 +12,6 @@ class TestLongestComPrefix(object):
 
     def test_has_no_common_prefix(self):
         assert self.solution.get_common_prefix(["abc", "aef", "bbc"]) == ""
+    
+    def test_empty_str_list(self):
+        assert self.solution.get_common_prefix([]) == ""

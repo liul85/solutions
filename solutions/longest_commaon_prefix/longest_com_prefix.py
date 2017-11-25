@@ -1,6 +1,6 @@
 class Solution(object):
     def get_common_prefix(self, strs):
-        if len(strs) == 0: return ""
+        if not strs: return ""
         min_str = min(strs, key=len)
         
         def has_common_prefix(strs, prefix):
